@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    h1 To Do List
+    p Welcome to our To-Do App
+
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        h2 Task List
+        #userList
+            table
+                thead
+                    th TaskName
+                    th Location
+                    th Status
+                tbody
+        // /USER LIST
+
+
+        // ADD task
+        h2 Add Task
+        #addTask
+            fieldset
+                input#inputTaskName(type='text', placeholder='Taskname')
+                input#inputLocation(type='text', placeholder='Location')
+                br
+                button#btnAddTask Add Task
+        // /ADD task
+
+    // /WRAPPER
